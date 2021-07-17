@@ -1,0 +1,88 @@
+.right-sidebar {
+    flex-basis: 25%;
+    background: white;
+    position: sticky;
+    padding: 10px 13px;
+    border-radius: 4px;
+}
+
+.right-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.right-sidebar-header h4 {
+    font-size: 1.5rem;
+    color: #626262;
+}
+
+.right-sidebar-header a {
+    font-size: 1.3rem;
+    color: #1867f2;
+}
+
+.event {
+    display: flex;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+/* left event starts */
+.left-event {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.left-event .event-month {
+    position: absolute;
+    bottom: 0;
+    background: #1867f2;
+    color: white;
+    width: 100%;
+}
+/* left event ends */
+
+
+/* right event starts */
+.right-event span {
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.right-event > span > img {
+    width: 10px;
+    align-self: center;
+    margin-right: 6px;
+}
+
+.right-event a {
+    color: #1867f2;
+    font-size: 1.2rem;
+}
+/* right event ends */
+
+
+/* member starts */
+.member {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+.member img {
+    width: 4rem;
+    align-self: center;
+    border-radius: 20px;
+}
+.member p {
+    align-self: center;
+    margin-left: 15px;
+}
+/* member ends */

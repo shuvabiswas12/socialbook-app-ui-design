@@ -1,0 +1,95 @@
+nav {
+    background-color: cornflowerblue;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+}
+
+.brand-name {
+    line-height: 1.8;
+    margin: 2px;
+    font-size: 2.4rem;
+    color: white;
+}
+
+.first-letter-of-brand {
+    background-color: azure;
+    padding: .3rem;
+    color: cornflowerblue;
+}
+
+.icons-in-header {
+    margin: 0 8rem;
+    display: flex;
+    align-self: center;
+    flex-basis: 20rem;
+    justify-content: space-around;
+}
+
+.icons-in-header img {
+    margin: 0 2.1rem;
+    width: 2.8rem;
+    cursor: pointer;
+}
+
+.first-part-of-navbar {
+    display: flex;
+    align-self: center;
+}
+
+.second-part-of-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 35rem;
+}
+
+.navbar-form {
+    background-color: white;
+    padding: 5px 8px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.search-label img {
+    width: 2.2rem;
+    padding: 2px;
+    display: flex;
+    align-self: center;
+}
+
+.profile-pic {
+    width: 34px;
+    border-radius: 20px;
+    display: flex;
+    align-self: center;
+    margin-left: 3rem;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: green;
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
