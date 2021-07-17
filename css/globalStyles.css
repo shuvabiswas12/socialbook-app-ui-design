@@ -1,0 +1,45 @@
+h1, p, section, div, a, li, ul, h2, h3, h4, h6, h5, strong, small, i, em, span, figure, img, hr {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.5;
+    font-family: Roboto, Arial, Serif, sans-serif;
+    font-size: 60%;
+
+    /*  In shorthand we can write it as
+    "font: 60% / 1.5 Roboto, Arial, Serif, sans-serif;"  */
+}
+
+.img-responsive {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.thumbnail {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
