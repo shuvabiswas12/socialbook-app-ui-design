@@ -1,209 +1,261 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>Social Media App</title>
 </head>
+
 <body>
 
-<nav class="navbar">
-    <div class="first-part-of-navbar">
-        <p class="brand-name"><span class="first-letter-of-brand">S</span><span>ocialbook</span></p>
-        <div class="icons-in-header">
-            <img src="images/notification.png" alt="notification">
-            <img src="images/inbox.png" alt="message-box">
-            <img src="images/video.png" alt="video">
-        </div>
-    </div>
-
-    <div class="second-part-of-navbar">
-        <div class="navbar-form">
-            <label for="search" class="search-label"><img src="images/search.png" alt="search"></label>
-            <input type="text" id="search" class="form-control" placeholder="Search">
-        </div>
-        <div class="navbar-user-icon online">
-            <img src="images/profile-pic.png" alt="profile-pic" class="profile-pic">
-        </div>
-    </div>
-</nav>
-
-<main class="container">
-    <div class="left-sidebar">
-        <div class="imp-links">
-            <a href=""><img src="images/news.png" alt="latest-news"> Latest News</a>
-            <a href=""><img src="images/friends.png" alt="friends"> Friends</a>
-            <a href=""><img src="images/group.png" alt="groups"> Group</a>
-            <a href=""><img src="images/marketplace.png" alt="marketplace"> Marketplace</a>
-            <a href=""><img src="images/watch.png" alt="watch"> Watch</a>
-            <a href="">See More</a>
-        </div>
-        <div class="shortcut-links">
-            <p class="shortcut-links-title">Your shortcuts</p>
-            <a href=""><img src="images/shortcut-1.png" alt=""> Web Developer</a>
-            <a href=""><img src="images/shortcut-2.png" alt=""> Web Design Course</a>
-            <a href=""><img src="images/shortcut-3.png" alt=""> Full Stack Development</a>
-            <a href=""><img src="images/shortcut-4.png" alt=""> Website Experts</a>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="story-gallery">
-            <div class="story story1">
-                <img src="images/upload.png" alt="">
-                <p>Post Story</p>
-            </div>
-            <div class="story story2">
-                <img src="images/member-1.png" alt="">
-                <p>Post Story</p>
-            </div>
-            <div class="story story3">
-                <img src="images/member-2.png" alt="">
-                <p>Post Story</p>
-            </div>
-            <div class="story story4">
-                <img src="images/member-3.png" alt="">
-                <p>Post Story</p>
-            </div>
-            <div class="story story5">
-                <img src="images/member-4.png" alt="">
-                <p>Post Story</p>
+    <nav class="navbar">
+        <div class="first-part-of-navbar">
+            <p class="brand-name"><span class="first-letter-of-brand">S</span><span>ocialbook</span></p>
+            <div class="icons-in-header">
+                <img src="images/notification.png" alt="notification">
+                <img src="images/inbox.png" alt="message-box">
+                <img src="images/video.png" alt="video">
             </div>
         </div>
 
-        <div class="status-posting-section">
-            <div class="my-photo">
-                <img src="images/profile-pic.png" alt="profile-picture">
+        <div class="second-part-of-navbar">
+            <div class="navbar-form">
+                <label for="search" class="search-label"><img src="images/search.png" alt="search"></label>
+                <input type="text" id="search" class="form-control" placeholder="Search">
             </div>
-            <div class="post-form">
-                <p class="profile-name">John Nicholson</p>
-                <span class="public">Public</span>
-                <input type="text" class="form-control" placeholder="What's on your mind, John?">
-                <div class="hr-line"></div>
-                <div class="post-icons">
+            <div class="navbar-user-icon online">
+                <img onclick="settingsMenuToggle()" src="images/profile-pic.png" alt="profile-pic" class="profile-pic">
+            </div>
+        </div>
+
+        <!-- settings menu starts -->
+        <div class="settings-menu">
+            <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <div>
+                    <div>
+                        <p>John Nicolas</p>
+                        <a href="">See your profile.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-profile">
+                <img src="images/feedback.png" alt="">
+                <div>
+                    <p>Give Feedback</p>
+                    <a href="">Help us to improve the new design.</a>
+                </div>
+            </div>
+            <div class="user-profile">
+                <img src="images/setting.png" alt="">
+                <div>
+                    <p>Settings & Privacy</p>
+                </div>
+            </div>
+            <div class="user-profile">
+                <img src="images/help.png" alt="">
+                <div>
+                    <p>Help & Support</p>
+                </div>
+            </div>
+            <div class="user-profile">
+                <img src="images/display.png" alt="">
+                <div>
+                    <p>Display and Accessibility</p>
+                </div>
+            </div>
+            <div class="user-profile">
+                <img src="images/logout.png" alt="">
+                <div>
+                    <p>Logout</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- settings menu ends -->
+
+    </nav>
+
+    <main class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href=""><img src="images/news.png" alt="latest-news"> Latest News</a>
+                <a href=""><img src="images/friends.png" alt="friends"> Friends</a>
+                <a href=""><img src="images/group.png" alt="groups"> Group</a>
+                <a href=""><img src="images/marketplace.png" alt="marketplace"> Marketplace</a>
+                <a href=""><img src="images/watch.png" alt="watch"> Watch</a>
+                <a href="">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p class="shortcut-links-title">Your shortcuts</p>
+                <a href=""><img src="images/shortcut-1.png" alt=""> Web Developer</a>
+                <a href=""><img src="images/shortcut-2.png" alt=""> Web Design Course</a>
+                <a href=""><img src="images/shortcut-3.png" alt=""> Full Stack Development</a>
+                <a href=""><img src="images/shortcut-4.png" alt=""> Website Experts</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="">
+                    <p>Post Story</p>
+                </div>
+            </div>
+
+            <div class="status-posting-section">
+                <div class="my-photo">
+                    <img src="images/profile-pic.png" alt="profile-picture">
+                </div>
+                <div class="post-form">
+                    <p class="profile-name">John Nicholson</p>
+                    <span class="public">Public</span>
+                    <input type="text" class="form-control" placeholder="What's on your mind, John?">
+                    <div class="hr-line"></div>
                     <div class="post-icons">
-                        <img src="images/live-video.png" alt="live-video">
-                        <p>Live Video</p>
-                    </div>
-                    <div class="post-icons">
-                        <img src="images/photo.png" alt="photo">
-                        <p>Photo/Video</p>
-                    </div>
-                    <div class="post-icons">
-                        <img src="images/feeling.png" alt="feelings">
-                        <p>Feelings</p>
-                    </div>
+                        <div class="post-icons">
+                            <img src="images/live-video.png" alt="live-video">
+                            <p>Live Video</p>
+                        </div>
+                        <div class="post-icons">
+                            <img src="images/photo.png" alt="photo">
+                            <p>Photo/Video</p>
+                        </div>
+                        <div class="post-icons">
+                            <img src="images/feeling.png" alt="feelings">
+                            <p>Feelings</p>
+                        </div>
 
-                </div>
-            </div>
-        </div>
-
-        <div class="user-posts">
-            <div class="user-post">
-                <div class="user">
-                    <div class="my-photo">
-                        <img src="images/profile-pic.png" alt="profile-picture">
                     </div>
-                    <div class="user-info">
-                        <p class="username">John Nicholas</p>
-                        <small class="date">June 24, 2021, 13:40 PM</small>
-                    </div>
-                </div>
-                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam amet commodi consequuntur
-                    dolorem minima, nulla quam sapiente voluptatem!</p>
-                <div class="feed-image-container">
-                    <img src="images/feed-image-1.png" alt="feed-image" class="feed-image">
-                </div>
-                <div class="activity-row">
-                    <div class="activity-img"><img src="images/like-blue.png" alt=""><span>15</span></div>
-                    <div class="activity-img"><img src="images/comments.png" alt=""><span>45</span></div>
-                    <div class="activity-img"><img src="images/share.png" alt=""><span>3</span></div>
                 </div>
             </div>
 
-            <div class="user-post">
-                <div class="user">
-                    <div class="my-photo">
-                        <img src="images/profile-pic.png" alt="profile-picture">
+            <div class="user-posts">
+                <div class="user-post">
+                    <div class="user">
+                        <div class="my-photo">
+                            <img src="images/profile-pic.png" alt="profile-picture">
+                        </div>
+                        <div class="user-info">
+                            <p class="username">John Nicholas</p>
+                            <small class="date">June 24, 2021, 13:40 PM</small>
+                        </div>
                     </div>
-                    <div class="user-info">
-                        <p class="username">John Nicholas</p>
-                        <small class="date">June 24, 2021, 13:40 PM</small>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias
+                        aliquam amet commodi consequuntur
+                        dolorem minima, nulla quam sapiente voluptatem!</p>
+                    <div class="feed-image-container">
+                        <img src="images/feed-image-1.png" alt="feed-image" class="feed-image">
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-img"><img src="images/like-blue.png" alt=""><span>15</span></div>
+                        <div class="activity-img"><img src="images/comments.png" alt=""><span>45</span></div>
+                        <div class="activity-img"><img src="images/share.png" alt=""><span>3</span></div>
                     </div>
                 </div>
-                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam amet commodi consequuntur
-                    dolorem minima, nulla quam sapiente voluptatem!</p>
-                <div class="feed-image-container">
-                    <img src="images/feed-image-2.png" alt="feed-image" class="feed-image">
+
+                <div class="user-post">
+                    <div class="user">
+                        <div class="my-photo">
+                            <img src="images/profile-pic.png" alt="profile-picture">
+                        </div>
+                        <div class="user-info">
+                            <p class="username">John Nicholas</p>
+                            <small class="date">June 24, 2021, 13:40 PM</small>
+                        </div>
+                    </div>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias
+                        aliquam amet commodi consequuntur
+                        dolorem minima, nulla quam sapiente voluptatem!</p>
+                    <div class="feed-image-container">
+                        <img src="images/feed-image-2.png" alt="feed-image" class="feed-image">
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-img"><img src="images/like-blue.png" alt=""><span>15</span></div>
+                        <div class="activity-img"><img src="images/comments.png" alt=""><span>45</span></div>
+                        <div class="activity-img"><img src="images/share.png" alt=""><span>3</span></div>
+                    </div>
                 </div>
-                <div class="activity-row">
-                    <div class="activity-img"><img src="images/like-blue.png" alt=""><span>15</span></div>
-                    <div class="activity-img"><img src="images/comments.png" alt=""><span>45</span></div>
-                    <div class="activity-img"><img src="images/share.png" alt=""><span>3</span></div>
+
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="right-sidebar-header">
+                <h4>Events</h4>
+                <a href="">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3 class="event-day">18</h3>
+                    <p class="event-month">March</p>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <span><img src="images/location.png" alt="location">Wilson Tech Park</span>
+                    <a href="">More Info</a>
                 </div>
             </div>
 
-        </div>
-    </div>
-    <div class="right-sidebar">
-        <div class="right-sidebar-header">
-            <h4>Events</h4>
-            <a href="">See All</a>
-        </div>
-
-        <div class="event">
-            <div class="left-event">
-                <h3 class="event-day">18</h3>
-                <p class="event-month">March</p>
+            <div class="event">
+                <div class="left-event">
+                    <h3 class="event-day">22</h3>
+                    <p class="event-month">June</p>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <span><img src="images/location.png" alt="location">Wilson Tech Park</span>
+                    <a href="">More Info</a>
+                </div>
             </div>
-            <div class="right-event">
-                <h4>Social Media</h4>
-                <span><img src="images/location.png" alt="location">Wilson Tech Park</span>
-                <a href="">More Info</a>
+
+            <div class="right-sidebar-header">
+                <h4>Advertisement</h4>
+                <a href="">Close</a>
+            </div>
+
+            <img src="images/advertisement.png" alt="advertisement" class="img-responsive">
+
+            <div class="right-sidebar-header">
+                <h4>Conversion</h4>
+                <a href="">Hide Chat</a>
+            </div>
+
+            <div class="member">
+                <div class="online"><img src="images/member-1.png" alt=""></div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="member">
+                <div class="online"><img src="images/member-2.png" alt=""></div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="member">
+                <div class="online"><img src="images/member-3.png" alt=""></div>
+                <p>Samona Rose</p>
             </div>
         </div>
+    </main>
 
-        <div class="event">
-            <div class="left-event">
-                <h3 class="event-day">22</h3>
-                <p class="event-month">June</p>
-            </div>
-            <div class="right-event">
-                <h4>Mobile Marketing</h4>
-                <span><img src="images/location.png" alt="location">Wilson Tech Park</span>
-                <a href="">More Info</a>
-            </div>
-        </div>
-
-        <div class="right-sidebar-header">
-            <h4>Advertisement</h4>
-            <a href="">Close</a>
-        </div>
-
-        <img src="images/advertisement.png" alt="advertisement" class="img-responsive">
-
-        <div class="right-sidebar-header">
-            <h4>Conversion</h4>
-            <a href="">Hide Chat</a>
-        </div>
-
-        <div class="member">
-            <div class="online"><img src="images/member-1.png" alt=""></div>
-            <p>Alison Mina</p>
-        </div>
-        <div class="member">
-            <div class="online"><img src="images/member-2.png" alt=""></div>
-            <p>Jackson Aston</p>
-        </div>
-        <div class="member">
-            <div class="online"><img src="images/member-3.png" alt=""></div>
-            <p>Samona Rose</p>
-        </div>
-    </div>
-</main>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
